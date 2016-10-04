@@ -39,6 +39,10 @@ self.addEventListener('activate', function(e) {
           console.log('[ServiceWorker] Removing old cache', key);
           return caches.delete(key);
 
+
+
+          
+
         }
       }));
     })
