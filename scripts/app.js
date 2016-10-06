@@ -105,6 +105,13 @@
       app.container.appendChild(card);
       app.visibleCards[data.key] = card;
     }
+
+    //verify that data is fresh
+    var dataElem = card.querySelector('.date');
+    if (dataElem.getAttribute('data-dt') >= data.currently.time) {
+      return;
+    }
+
     card.querySelector('.description').textContent = data.currently.summary;
     card.querySelector('.date').textContent =
       new Date(data.currently.time * 1000);
@@ -154,6 +161,18 @@
   // Gets a forecast for a specific city and update the card with the data
   app.getForecast = function(key, label) {
     var url = weatherAPIUrlBase + key + '.json';
+    //feture detect the caches object
+    if('caches' in window){
+      caches.matches(url).then(function(response) {
+        if(response){
+          response.json().then(function(json){
+            json.key = key;
+            json.label = label;
+            app.updateForecastCard(json);
+          });
+        }
+      });
+    }
     // Make the XHR to get the data, then update the card
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
