@@ -163,7 +163,7 @@
     var url = weatherAPIUrlBase + key + '.json';
     //feture detect the caches object
     if('caches' in window){
-      caches.matches(url).then(function(response) {
+      caches.match(url).then(function(response) {
         if(response){
           response.json().then(function(json){
             json.key = key;
