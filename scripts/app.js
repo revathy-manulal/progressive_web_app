@@ -205,7 +205,7 @@
 
   if('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/service-worker.js')
+        .register('/progressive_web_app/service-worker.js')
         .then(function() {
           console.log('Service Worker Registered');
         });
