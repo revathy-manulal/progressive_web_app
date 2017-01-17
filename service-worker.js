@@ -1,23 +1,23 @@
 var cacheName = 'weatherPWA-v1';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/scripts/app.js',
-  '/scripts/localforage-1.4.0.js',
-  '/styles/ud811.css',
-  '/images/clear.png',
-  '/images/cloudy-scattered-showers.png',
-  '/images/cloudy.png',
-  '/images/fog.png',
-  '/images/ic_add_white_24px.svg',
-  '/images/ic_refresh_white_24px.svg',
-  '/images/partly-cloudy.png',
-  '/images/rain.png',
-  '/images/scattered-showers.png',
-  '/images/sleet.png',
-  '/images/snow.png',
-  '/images/thunderstorm.png',
-  '/images/wind.png'
+  '/progressive_web_app',
+  '/progressive_web_app/index.html',
+  '/progressive_web_app/scripts/app.js',
+  '/progressive_web_app/scripts/localforage-1.4.0.js',
+  '/progressive_web_app/styles/ud811.css',
+  '/progressive_web_app/images/clear.png',
+  '/progressive_web_app/images/cloudy-scattered-showers.png',
+  '/progressive_web_app/images/cloudy.png',
+  '/progressive_web_app.images/fog.png',
+  '/progressive_web_app/images/ic_add_white_24px.svg',
+  '/progressive_web_app/images/ic_refresh_white_24px.svg',
+  '/progressive_web_app/images/partly-cloudy.png',
+  '/progressive_web_app/images/rain.png',
+  '/progressive_web_app/images/scattered-showers.png',
+  '/progressive_web_app/images/sleet.png',
+  '/progressive_web_app/images/snow.png',
+  '/progressive_web_app/images/thunderstorm.png',
+  '/progressive_web_app/images/wind.png'
 ];
 
 self.addEventListener('install', function(e) {
