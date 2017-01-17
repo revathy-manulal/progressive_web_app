@@ -8,7 +8,7 @@ var filesToCache = [
   '/progressive_web_app/images/clear.png',
   '/progressive_web_app/images/cloudy-scattered-showers.png',
   '/progressive_web_app/images/cloudy.png',
-  '/progressive_web_app.images/fog.png',
+  '/progressive_web_app/images/fog.png',
   '/progressive_web_app/images/ic_add_white_24px.svg',
   '/progressive_web_app/images/ic_refresh_white_24px.svg',
   '/progressive_web_app/images/partly-cloudy.png',
