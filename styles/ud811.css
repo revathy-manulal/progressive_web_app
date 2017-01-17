@@ -303,7 +303,7 @@ body {
   .weather-forecast .icon.fog {
     background-image: url("/progressive_web_app/images/fog.png"); }
   .weather-forecast .icon.cloudy {
-    background-image: url("/images/cloudy.png"); }
+    background-image: url("/progressive_web_app/images/cloudy.png"); }
   .weather-forecast .icon.partly-cloudy-day {
     background-image: url("/progressive_web_app/images/partly-cloudy.png"); }
   .weather-forecast .icon.partly-cloudy-night {
